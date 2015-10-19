@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qsyd_float_window_small_quit_linearlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/qsyd_float_window_small_icon_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_launcher"
+        android:orientation="vertical" />
+
+    <org.xiangbalao.floatview.view.MarqueeTextView
+        android:id="@+id/qsyd_float_window_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:ems="5"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="轻松e贷正常运行中"
+        android:background="#008866"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出保护"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

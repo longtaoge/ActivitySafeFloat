@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ff00" >
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2ede9"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".MyLoginActivity" >
+        <LinearLayout
+            android:id="@+id/by_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="center_horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/bg_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:background="@drawable/username_bj"
+                    android:hint="用户名/手机号/身份证号"
+                    android:lines="1"
+                    android:paddingLeft="60dip"
+                    android:singleLine="true"
+                    android:textSize="18sp" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/bg_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bg_username"
+                    android:layout_marginBottom="30dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:background="@drawable/password_bg"
+                    android:focusable="false"
+                    android:hint="登录密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="60dip"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="18sp" >
+                </EditText>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/bg_username"
+                    android:layout_alignLeft="@+id/bg_username"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/username_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/bg_password"
+                    android:layout_alignLeft="@+id/bg_password"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/password_icon" />
+
+                <Button
+                    android:id="@+id/bt_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bg_password"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:background="@drawable/login_bt"
+                    android:text="登录"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_jizhu"
+                    style="@style/isCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bt_register"
+                    android:layout_alignBottom="@+id/jizhumima"
+                    android:layout_alignLeft="@+id/bt_login"
+                    android:layout_alignTop="@+id/jizhumima"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="1dip"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/jizhumima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bt_login"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_toRightOf="@+id/checkbox_jizhu"
+                    android:text="记住用户名"
+                    android:textColor="#787878"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/bt_login"
+                    android:layout_below="@id/bt_login"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="5dip"
+                    android:text="忘记密码?"
+                    android:textColor="#787878"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/bt_register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/forget_password"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:background="@drawable/register_bt"
+                    android:text="注册"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

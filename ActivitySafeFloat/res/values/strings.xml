@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActivityFloat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_red">91816244869</string>
+    <string name="sign_blue">9c16293ae993</string>
+    <string name="sign_yello">58b488892</string>
+
+</resources>
